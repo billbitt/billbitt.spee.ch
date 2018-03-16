@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/lbryio/www.spee.ch#readme",
   "dependencies": {
+    "react": "^16.2.0",
     "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package-no-bundle"
   }
 }

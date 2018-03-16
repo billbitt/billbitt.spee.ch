@@ -1,1 +1,3 @@
-const { speechClient } = require('spee.ch');
+const speech = require('spee.ch');
+
+const client = new speech.client();
