@@ -1,12 +1,11 @@
 // require the spee.ch package
 const speech = require('spee.ch');
 // get config files
-const { mysqlConfig, siteConfig, slackConfig } = require('../config/index')
-const pages = require('./pages');
+const { mysqlConfig, siteConfig, slackConfig } = require('./config/index')
 
 try {
     // create a new spee.ch server
-    const server = new speech.server();
+    const server = new speech();
     // configure server
     server.configureMysql(mysqlConfig);
     server.configureSite(siteConfig);

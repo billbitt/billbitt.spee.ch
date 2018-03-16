@@ -13,8 +13,8 @@ module.exports = {
     details: {
         port       : 3000,
         title      : 'billbitt.Spee.ch',
-        host       : 'https://dev2.spee.ch',
-        description: 'billbitt.spee.ch running on dev2.spee.ch',
+        host       : 'https://dev1.spee.ch',
+        description: 'billbitt.spee.ch running on dev1.spee.ch',
     },
     publishing: {
         additionalClaimAddresses: ['banpwixPosfVDWnGvXqU2af36Qpsd7buGd'],
