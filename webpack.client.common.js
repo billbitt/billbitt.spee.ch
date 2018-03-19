@@ -1,5 +1,5 @@
 const Path = require('path');
-const REACT_ROOT = Path.resolve(__dirname, 'react/');
+const SPEECH_CLIENT_ROOT = Path.resolve(__dirname, '/node_modules/spee.ch/client/');
 
 module.exports = {
   target: 'web',
@@ -14,7 +14,7 @@ module.exports = {
       {
         test   : /.jsx?$/,
         loader : 'babel-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!(spee.ch)\/).*/,
         query  : {
           presets: ['es2015', 'react', 'stage-2'],
         },
@@ -23,7 +23,7 @@ module.exports = {
   },
   resolve: {
     modules: [
-      REACT_ROOT,
+      SPEECH_CLIENT_ROOT,
       'node_modules',
       __dirname,
     ],
