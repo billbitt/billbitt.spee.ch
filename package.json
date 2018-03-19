@@ -8,6 +8,8 @@
     "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack --config webpack.dev.js",
+    "build-dev-client": "webpack --config webpack.dev.client.js",
+    "build-dev-server": "webpack --config webpack.dev.server.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
