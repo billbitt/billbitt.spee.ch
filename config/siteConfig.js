@@ -1,3 +1,5 @@
+import HomePage from '../client/pages/HomePage';
+
 module.exports = {
     analytics: {
         googleId: 'UA-60403362-6',
@@ -15,6 +17,13 @@ module.exports = {
         title      : 'billbitt.Spee.ch',
         host       : 'https://dev1.spee.ch',
         description: 'billbitt.spee.ch running on dev1.spee.ch',
+    },
+    customComponents: {
+        components: {},
+        containers: {},
+        pages: {
+            HomePage,
+        },
     },
     publishing: {
         additionalClaimAddresses: ['banpwixPosfVDWnGvXqU2af36Qpsd7buGd'],
