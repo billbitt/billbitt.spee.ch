@@ -18,7 +18,7 @@ module.exports = {
         host       : 'https://dev1.spee.ch',
         description: 'billbitt.spee.ch running on dev1.spee.ch',
     },
-    customComponents: {
+    componentsConfig: {
         components: {},
         containers: {},
         pages: {

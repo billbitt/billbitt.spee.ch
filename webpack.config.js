@@ -1,9 +1,14 @@
 const Path = require('path');
 const CLIENT_ROOT = Path.resolve(__dirname, 'client/');
 const SERVER_ROOT = Path.resolve(__dirname, 'server/');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-    target: 'web',
+    target: 'node',
+    node  : {
+        __dirname: false,
+    },
+    externals: [nodeExternals()],
     entry : ['babel-polyfill', './server/server.js'],
     output: {
         path      : Path.join(__dirname, '/'),
