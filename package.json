@@ -35,6 +35,6 @@
     "react": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0",
-    "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package-yes-build"
+    "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package-export-component-lib"
   }
 }
