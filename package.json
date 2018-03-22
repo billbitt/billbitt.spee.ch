@@ -1,5 +1,5 @@
 {
-  "name": "www.spee.ch",
+  "name": "billbitt.spee.ch",
   "version": "0.0.1",
   "description": "A web app that uses the spee.ch codebase",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lbryio/www.spee.ch.git"
+    "url": "git+https://github.com/billbitt/billbitt.spee.ch.git"
   },
   "keywords": [
     "lbry",
@@ -22,9 +22,9 @@
   "author": "@billbitt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lbryio/www.spee.ch/issues"
+    "url": "https://github.com/billbitt/billbitt.spee.ch/issues"
   },
-  "homepage": "https://github.com/lbryio/www.spee.ch#readme",
+  "homepage": "https://github.com/billbitt/billbitt.spee.ch#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -35,6 +35,6 @@
     "react": "^16.2.0",
     "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0",
-    "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package-export-component-lib"
+    "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package"
   }
 }
