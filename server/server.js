@@ -1,7 +1,7 @@
 // require the spee.ch package
 const Speech = require('spee.ch');
-console.log('speech:', Speech)
-// get config files
+
+// get the local configs
 const { mysqlConfig, siteConfig, slackConfig } = require('../config/');
 
 try {
