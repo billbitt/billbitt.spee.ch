@@ -1,4 +1,5 @@
 import HomePage from '../client/pages/HomePage';
+// import AboutPage from '../client/pages/AboutPage';
 
 module.exports = {
     analytics: {
@@ -18,11 +19,12 @@ module.exports = {
         host       : 'https://dev1.spee.ch',
         description: 'billbitt.spee.ch running on dev1.spee.ch',
     },
-    componentsConfig: {
+    customComponents: {
         components: {},
         containers: {},
         pages: {
             HomePage,
+            // AboutPage,
         },
     },
     publishing: {
