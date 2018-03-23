@@ -1,6 +1,5 @@
 // require the spee.ch package
 const Speech = require('spee.ch');
-
 // get the local configs
 const { mysqlConfig, siteConfig, slackConfig } = require('../config/');
 
@@ -16,5 +15,5 @@ try {
     // start the server (syncs db and
     server.start();
 } catch (error) {
-    console.log('spee.ch server startup error:', error);
+    console.log('server startup error:', error);
 }
