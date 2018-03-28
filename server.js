@@ -10,15 +10,15 @@ const Speech = require('spee.ch');
 
 // update configs in the spee.ch package with local config values
 const localLoggerConfig = require('./config/loggerConfig.js');
-const localMysqlConfig = require('./config/mysqlConfig.js');
 const localSlackConfig = require('./config/slackConfig.js');
 const localSiteConfig = require('./config/siteConfig.js');
 Speech.logger.configure(localLoggerConfig);
 Speech.slack.configure(localSlackConfig);
-Speech.mysql.configure(localMysqlConfig);
 Speech.site.configure(localSiteConfig);
 
-const db = Speech.mysql.db;  // note: must come after configuration of mysql above ?
+// create db and pass it to speech package
+const db = require('./server/models');
+// Speech.mysql.configure(db);
 
 const { auth: { sessionKey } } = localSiteConfig;
 const { details: { port: PORT } } = localSiteConfig;
@@ -59,7 +59,7 @@ app.set('view engine', 'handlebars');
 
 // set the routes on the app
 // require('./routes/auth-routes.js')(app);
-require('./server/routes/apiRoutes.js')(app);
+require('./server/routes/apiRoutes.js')(app, db, 'test host');
 // require('./routes/page-routes.js')(app);
 // require('./routes/asset-routes.js')(app);
 // require('./routes/fallback-routes.js')(app);
