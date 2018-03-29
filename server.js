@@ -58,11 +58,11 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 // set the routes on the app
-// require('./routes/auth-routes.js')(app);
-require('./server/routes/apiRoutes.js')(app, db, 'test host');
-// require('./routes/page-routes.js')(app);
-// require('./routes/asset-routes.js')(app);
-// require('./routes/fallback-routes.js')(app);
+require('./server/routes/auth.js')(app);
+require('./server/routes/api.js')(app, db);
+require('./server/routes/pages.js')(app);
+require('./server/routes/assets.js')(app);
+require('./server/routes/fallback.js')(app);
 
 // create server
 const server = http.Server(app);
