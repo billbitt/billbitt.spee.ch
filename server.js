@@ -1,7 +1,7 @@
 // require the spee.ch package
 const Speech = require('spee.ch');
 // get the local configs
-const loggerConfig = require('./config/loggerConfig.js');
+const loggerConfig = require('./config/loggerConfig.js'); // make these direct
 const mysqlConfig = require('./config/mysqlConfig.js');
 const siteConfig = require('./config/siteConfig.js');
 const slackConfig = require('./config/slackConfig.js');

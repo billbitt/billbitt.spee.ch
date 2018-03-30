@@ -3,5 +3,5 @@ import AboutPage from './AboutPage';
 
 module.exports = {
     HomePage,
-    // AboutPage,
+    AboutPage,
 };

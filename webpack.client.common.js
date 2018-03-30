@@ -1,13 +1,13 @@
 const Path = require('path');
-const CLIENT_ROOT = Path.resolve(__dirname, 'client/');
-const CONFIG_ROOT = Path.resolve(__dirname, 'config/');
+const CLIENT_ROOT = Path.resolve(__dirname, 'client/');  // needed?
+const CONFIG_ROOT = Path.resolve(__dirname, 'config/');  // needed?
 
 module.exports = {
   target: 'web',
-  entry : ['babel-polyfill', 'whatwg-fetch', './client/index.js'],
+  entry : ['babel-polyfill', 'whatwg-fetch', './client.js'],
   output: {
-    path      : Path.join(__dirname, 'localPublic/bundle/'),
-    publicPath: 'localPublic/bundle/',
+    path      : Path.join(__dirname, 'static/bundle/'),
+    publicPath: 'static/bundle/',
     filename  : 'bundle.js',
   },
   module: {
