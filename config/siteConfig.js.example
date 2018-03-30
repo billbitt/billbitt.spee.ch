@@ -25,4 +25,7 @@ module.exports = {
         thumbnailChannelId      : '',  // use the channel id for your thumbnail channel
         uploadDirectory         : '/home/lbry/Uploads',  // adjust this file path as necessary
     },
+    routes: {
+        publicFolder: null,  // 'localPublic'
+    },
 };
