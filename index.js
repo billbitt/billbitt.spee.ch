@@ -7,6 +7,7 @@ const siteConfig = require('./config/siteConfig.js');
 const slackConfig = require('./config/slackConfig.js');
 
 try {
+    console.log(`Current directory (index.js): ${process.cwd()}`);
     // create a new spee.ch server
     const server = new Speech.Server();
     // configure server
