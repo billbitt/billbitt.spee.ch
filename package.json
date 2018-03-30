@@ -8,9 +8,10 @@
     "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js  --watch",
-    "build-dev-client": "webpack --config webpack.dev.client.js  --watch",
-    "build-dev-server": "webpack --config webpack.dev.server.js  --watch"
+    "build-dev": "webpack --config webpack.dev.js",
+    "pre-build-dev": "webpack --config webpack.dev.prebuild.js",
+    "build-dev-client": "webpack --config webpack.dev.client.js",
+    "build-dev-server": "webpack --config webpack.dev.server.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,18 @@
     "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package-configs-custom-homepage"
   },
   "devDependencies": {
-    "nodemon": "^1.15.1"
+    "nodemon": "^1.15.1",
+    "babel-polyfill": "^6.26.0",
+    "whatwg-fetch": "^2.0.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.9",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.2"
   }
 }

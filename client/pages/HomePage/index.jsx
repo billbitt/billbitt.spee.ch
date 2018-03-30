@@ -1,12 +1,10 @@
 import React from 'react';
-const Speech = require('spee.ch');
-const { Containers: { NavBar }, Components: { SEO } } = Speech;
+const { Containers: { NavBar } } = require('spee.ch');
 
 class HomePage extends React.Component {
   render () {
     return (
         <div className={'row row--tall flex-container--column'}>
-            <SEO />
             <NavBar />
             <div className={'row row--tall row--padded flex-container--column'}>
                 <h2>Welcome to billbitt.spee.ch!</h2>

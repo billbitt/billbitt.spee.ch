@@ -1,12 +1,10 @@
 import React from 'react';
-const Speech = require('spee.ch');
-const { Containers: { NavBar }, Components: { SEO } } = Speech;
+const { Containers: { NavBar } } = require('spee.ch');
 
 class AboutPage extends React.Component {
   render () {
     return (
         <div>
-            <SEO pageTitle={'About'} pageUri={'about'} />
             <NavBar />
             <div className='row row--padded'>
                 <h3>Welcome to my custom about page!</h3>
