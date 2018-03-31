@@ -4,15 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import createSagaMiddleware from 'redux-saga';
-  // import Reducer from 'reducers';
-  // import rootSaga  from 'sagas';
-  // import GAListener from 'components/GAListener';
-  // import App from './app';
-// const { Reducer } = require('spee.ch');
-// const { rootSaga } = require('spee.ch');
-// const { GAListener } = require('spee.ch');
-// const { App } = require('spee.ch');
-// const Speech = require('spee.ch');
+import Reducer from 'speech/reducers';
+import rootSaga  from 'speech/sagas';
+import GAListener from 'speech/components/GAListener';
+import App from 'speech/app';
 
 const siteConfig = require('siteConfig.js');
 
