@@ -6,7 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 import createSagaMiddleware from 'redux-saga';
 import { Reducers, Sagas, GAListener, App } from 'spee.ch-components';
 
+// configure the reducers by passing initial state configs
 const siteConfig = require('siteConfig.js');
+const customizedReducers = Reducers(siteConfig);
 
 // get the state from a global variable injected into the server-generated HTML
 const preloadedState = window.__PRELOADED_STATE__ || null;
@@ -22,9 +24,9 @@ const reduxMiddleware = window.__REDUX_DEVTOOLS_EXTENSION__ ? compose(middleware
 // create the store
 let store;
 if (preloadedState) {
-    store = createStore(Reducers, preloadedState, reduxMiddleware);
+    store = createStore(customizedReducers, preloadedState, reduxMiddleware);
 } else {
-    store = createStore(Reducers, reduxMiddleware);
+    store = createStore(customizedReducers, reduxMiddleware);
 }
 
 sagaMiddleware.run(Sagas.rootSaga);
@@ -41,4 +43,4 @@ hydrate(
     document.getElementById('react-app')
 );
 
-console.log('hello');
+console.log('hello from billbitt.spee.ch client.js');

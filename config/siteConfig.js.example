@@ -15,6 +15,7 @@ module.exports = {
         title      : 'Spee.ch',
         host       : 'https://dev1.spee.ch',
         description: 'Open-source, decentralized image and video sharing.',
+        twitter    : '@billbitt.spee.ch',
     },
     publishing: {
         additionalClaimAddresses: [], // optional
