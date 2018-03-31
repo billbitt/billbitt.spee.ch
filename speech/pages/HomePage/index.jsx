@@ -1,7 +1,7 @@
 import React from 'react';
-import SEO from 'components/SEO';
-import NavBar from 'containers/NavBar';
-import PublishTool from 'containers/PublishTool';
+import SEO from '../../components/SEO';
+import NavBar from '../../containers/NavBar';
+import PublishTool from '../../containers/PublishTool';
 
 class HomePage extends React.Component {
   render () {

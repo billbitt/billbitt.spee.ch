@@ -1,9 +1,9 @@
 import {call, put, select, takeLatest} from 'redux-saga/effects';
-import * as actions from 'constants/show_action_types';
-import { addNewChannelToChannelList, addRequestToRequestList, onRequestError, onRequestUpdate, updateChannelClaims } from 'actions/show';
-import { getChannelClaims, getChannelData } from 'api/channelApi';
-import { selectShowState } from 'selectors/show';
-import { selectSiteHost } from 'selectors/site';
+import * as actions from '../constants/show_action_types';
+import { addNewChannelToChannelList, addRequestToRequestList, onRequestError, onRequestUpdate, updateChannelClaims } from '../actions/show';
+import { getChannelClaims, getChannelData } from '../api/channelApi';
+import { selectShowState } from '../selectors/show';
+import { selectSiteHost } from '../selectors/site';
 
 export function * newChannelRequest (action) {
   const { requestType, requestId, channelName, channelId } = action.data;

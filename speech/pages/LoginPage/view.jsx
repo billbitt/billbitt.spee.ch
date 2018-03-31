@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import SEO from 'components/SEO';
-import NavBar from 'containers/NavBar';
-import ChannelLoginForm from 'containers/ChannelLoginForm';
-import ChannelCreateForm from 'containers/ChannelCreateForm';
+import SEO from '../../components/SEO';
+import NavBar from '../../containers/NavBar';
+import ChannelLoginForm from '../../containers/ChannelLoginForm';
+import ChannelCreateForm from '../../containers/ChannelCreateForm';
 
 class LoginPage extends React.Component {
   componentWillReceiveProps (newProps) {

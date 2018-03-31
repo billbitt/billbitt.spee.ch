@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { dynamicImport } from 'utils/dynamicImport';
-import LoginPage from 'pages/LoginPage';
-import ShowPage from 'pages/ShowPage';
-import FourOhFourPage from 'containers/FourOhFourPage';
+import { dynamicImport } from './utils/dynamicImport';
+import LoginPage from './pages/LoginPage';
+import ShowPage from './pages/ShowPage';
+import FourOhFourPage from './containers/FourOhFourPage';
 
-const HomePage = dynamicImport('pages/HomePage') || require('pages/HomePage').default;
-const AboutPage = dynamicImport('pages/AboutPage') || require('pages/AboutPage').default;
+const HomePage = dynamicImport('pages/HomePage') || require('./pages/HomePage').default;
+const AboutPage = dynamicImport('pages/AboutPage') || require('./pages/AboutPage').default;
 
 const App = () => {
   return (

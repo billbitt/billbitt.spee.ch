@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from 'containers/NavBar';
-import SEO from 'components/SEO';
+import SEO from '../../components/SEO';
+import NavBar from '../../containers/NavBar';
 
 class AboutPage extends React.Component {
   render () {

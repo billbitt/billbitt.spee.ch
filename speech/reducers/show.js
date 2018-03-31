@@ -1,5 +1,5 @@
-import * as actions from 'constants/show_action_types';
-import { LOCAL_CHECK, ERROR } from 'constants/asset_display_states';
+import * as actions from '../constants/show_action_types';
+import { LOCAL_CHECK, ERROR } from '../constants/asset_display_states';
 
 const initialState = {
   request: {
