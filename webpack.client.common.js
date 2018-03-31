@@ -1,5 +1,6 @@
 const Path = require('path');
 const CLIENT_ROOT = Path.resolve(__dirname, 'client/');  // needed?
+const SPEECH_ROOT = Path.resolve(__dirname, 'speech/');  // needed?
 const CONFIG_ROOT = Path.resolve(__dirname, 'config/');  // needed?
 
 module.exports = {
@@ -25,6 +26,7 @@ module.exports = {
   resolve: {
     modules: [
       CLIENT_ROOT,
+      SPEECH_ROOT,
       CONFIG_ROOT,
       'node_modules',
       __dirname,

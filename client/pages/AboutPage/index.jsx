@@ -1,5 +1,5 @@
 import React from 'react';
-const { Containers: { NavBar } } = require('spee.ch');
+import NavBar from 'speech/containers/NavBar';
 
 class AboutPage extends React.Component {
   render () {

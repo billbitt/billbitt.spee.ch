@@ -14,7 +14,7 @@ import createSagaMiddleware from 'redux-saga';
 // const { App } = require('spee.ch');
 // const Speech = require('spee.ch');
 
-// const siteConfig = require('siteConfig.js');
+const siteConfig = require('siteConfig.js');
 
 // get the state from a global variable injected into the server-generated HTML
 const preloadedState = window.__PRELOADED_STATE__ || null;
