@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from 'speech/containers/NavBar';
+import { NavBar } from 'spee.ch-components';
 
 class HomePage extends React.Component {
   render () {

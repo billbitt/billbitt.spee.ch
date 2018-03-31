@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import createSagaMiddleware from 'redux-saga';
-import Reducer from 'speech/reducers';
-import rootSaga  from 'speech/sagas';
-import GAListener from 'speech/components/GAListener';
-import App from 'speech/app';
+import { Reducers } from 'spee.ch-components';
+import { Sagas }  from 'spee.ch-components';
+import { GAListener } from 'spee.ch-components';
+import { App } from 'spee.ch-components';
 
 const siteConfig = require('siteConfig.js');
 
@@ -25,12 +25,12 @@ const reduxMiddleware = window.__REDUX_DEVTOOLS_EXTENSION__ ? compose(middleware
 // create the store
 let store;
 if (preloadedState) {
-    store = createStore(Reducer, preloadedState, reduxMiddleware);
+    store = createStore(Reducers, preloadedState, reduxMiddleware);
 } else {
-    store = createStore(Reducer, reduxMiddleware);
+    store = createStore(Reducers, reduxMiddleware);
 }
 
-sagaMiddleware.run(rootSaga);
+sagaMiddleware.run(Sagas);
 
 // render the app
 hydrate(

@@ -1,6 +1,6 @@
 const Path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const CLIENT_ROOT = Path.resolve(__dirname, 'client/');  // is this needed?
+const CLIENT_ROOT = Path.resolve(__dirname, 'client/');
 
 module.exports = {
   target: 'node',
