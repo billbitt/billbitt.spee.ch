@@ -1,7 +1,7 @@
 import HomePage from './HomePage';
-import AboutPage from './AboutPage';
+// import AboutPage from './AboutPage';
 
 module.exports = {
     HomePage,
-    AboutPage,
+    // AboutPage,
 };
