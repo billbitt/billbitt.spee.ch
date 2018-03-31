@@ -15,6 +15,7 @@ module.exports = {
         title      : 'Spee.ch',
         host       : 'https://dev1.spee.ch',
         description: 'Open-source, decentralized image and video sharing.',
+        twitter    : '@billbitt.spee.ch',
     },
     publishing: {
         additionalClaimAddresses: [], // optional
@@ -26,6 +27,6 @@ module.exports = {
         uploadDirectory         : '/home/lbry/Uploads',  // adjust this file path as necessary
     },
     routes: {
-        publicFolder: null,  // 'localPublic'
+        publicFolder: 'static',
     },
 };
