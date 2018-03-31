@@ -4,10 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import createSagaMiddleware from 'redux-saga';
-import { Reducers } from 'spee.ch-components';
-import { Sagas }  from 'spee.ch-components';
-import { GAListener } from 'spee.ch-components';
-import { App } from 'spee.ch-components';
+import { Reducers, Sagas, GAListener, App } from 'spee.ch-components';
 
 const siteConfig = require('siteConfig.js');
 
@@ -30,7 +27,7 @@ if (preloadedState) {
     store = createStore(Reducers, reduxMiddleware);
 }
 
-sagaMiddleware.run(Sagas);
+sagaMiddleware.run(Sagas.rootSaga);
 
 // render the app
 hydrate(
