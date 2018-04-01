@@ -8,8 +8,9 @@ import { Reducers, Sagas, GAListener, App } from 'spee.ch-components';
 
 // configure the reducers by passing initial state configs
 const siteConfig = require('siteConfig.js');
-const CustomizedReducers = Reducers(siteConfig);
-const CustomizedApp = App(siteConfig);
+const MyReducers = Reducers(siteConfig);
+const MyApp = App(siteConfig);
+const MyGAListener = GAListener(siteConfig);
 
 // get the state from a global variable injected into the server-generated HTML
 const preloadedState = window.__PRELOADED_STATE__ || null;
@@ -25,9 +26,9 @@ const reduxMiddleware = window.__REDUX_DEVTOOLS_EXTENSION__ ? compose(middleware
 // create the store
 let store;
 if (preloadedState) {
-    store = createStore(CustomizedReducers, preloadedState, reduxMiddleware);
+    store = createStore(MyReducers, preloadedState, reduxMiddleware);
 } else {
-    store = createStore(CustomizedReducers, reduxMiddleware);
+    store = createStore(MyReducers, reduxMiddleware);
 }
 
 sagaMiddleware.run(Sagas.rootSaga);
@@ -36,9 +37,9 @@ sagaMiddleware.run(Sagas.rootSaga);
 hydrate(
     <Provider store={store}>
         <BrowserRouter>
-            <GAListener>
-                <CustomizedApp />
-            </GAListener>
+            <MyGAListener>
+                <MyApp />
+            </MyGAListener>
         </BrowserRouter>
     </Provider>,
     document.getElementById('react-app')
