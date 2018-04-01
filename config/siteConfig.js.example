@@ -1,3 +1,7 @@
+const customPages = require('../client/pages');
+const customContainers = require('../client/containers');
+const customComponents = require('../client/components');
+
 module.exports = {
     analytics: {
         googleId: null,  // insert your google ID or leave 'null'
@@ -17,6 +21,9 @@ module.exports = {
         description: 'Open-source, decentralized image and video sharing.',
         twitter    : '@billbitt.spee.ch',
     },
+    customPages,
+    customComponents,
+    customContainers,
     publishing: {
         additionalClaimAddresses: [], // optional
         disabled                : false, // change to 'true' to disable publishing
