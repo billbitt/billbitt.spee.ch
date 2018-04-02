@@ -1,5 +1,5 @@
 // require the spee.ch package
-const Speech = require('spee.ch');
+const Server = require('spee.ch-server');
 // get the local configs
 const loggerConfig = require('./config/loggerConfig.js'); // make these direct
 const mysqlConfig = require('./config/mysqlConfig.js');
@@ -8,7 +8,7 @@ const slackConfig = require('./config/slackConfig.js');
 
 try {
     // create a new spee.ch server
-    const server = new Speech.Server();
+    const server = new Server();
     // configure the server
     server.configureLogger(loggerConfig);
     server.configureMysql(mysqlConfig);

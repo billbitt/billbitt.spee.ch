@@ -34,6 +34,6 @@ module.exports = {
         uploadDirectory         : '/home/lbry/Uploads',  // adjust this file path as necessary
     },
     routes: {
-        publicFolder: 'static',
+        publicFolder: 'public',
     },
 };

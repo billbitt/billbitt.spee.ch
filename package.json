@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/billbitt/billbitt.spee.ch#readme",
   "dependencies": {
-    "spee.ch": "git://github.com/lbryio/spee.ch.git#speech-as-a-package",
+    "spee.ch-server": "git://github.com/lbryio/spee.ch.git#speech-as-a-package",
     "spee.ch-components": "git://github.com/billbitt/spee.ch-components.git"
   },
   "devDependencies": {
